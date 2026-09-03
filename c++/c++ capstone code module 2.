@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int passengers;
+    double energy;
+    cout << "Enter Number of Passengers: ";
+    cin >> passengers;
+    energy = passengers * 2.5;
+    cout << "\nEnergy Usage: " << energy << " units";
+    if (passengers >= 50)
+        cout << "\nStatus: Efficient";
+    else
+        cout << "\nStatus: Normal";
+    return 0;
+}
