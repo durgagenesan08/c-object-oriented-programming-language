@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+    string name, train;
+    int seats;
+    cout << "Enter Passenger Name: ";
+    cin >> name;
+    cout << "Enter Train Name: ";
+    cin >> train;
+    cout << "Enter Seats: ";
+    cin >> seats;
+    if (seats > 0 && seats <= 100) {
+        cout << "\nBooking Confirmed";
+        cout << "\nPassenger: " << name;
+        cout << "\nTrain: " << train;
+        cout << "\nSeats: " << seats;
+        cout << "\nFare: Rs." << seats * 450;
+    } else {
+        cout << "Invalid seats";
+    }
+    return 0;
+}
